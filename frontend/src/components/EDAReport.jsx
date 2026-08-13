@@ -12,9 +12,9 @@ export default function EDAReport() {
     const fetchData = async () => {
       try {
         const [resMom, resAge, resMomQ] = await Promise.all([
-          fetch('http://127.0.0.1:8000/api/eda/momentum'),
-          fetch('http://127.0.0.1:8000/api/eda/age_course'),
-          fetch('http://127.0.0.1:8000/api/eda/mother_qual')
+          fetch('https://student-dropout-prediction-with-xai.onrender.com/api/eda/momentum'),
+          fetch('https://student-dropout-prediction-with-xai.onrender.com/api/eda/age_course'),
+          fetch('https://student-dropout-prediction-with-xai.onrender.com/api/eda/mother_qual')
         ]);
         
         setMomentumData(await resMom.json());
@@ -99,17 +99,17 @@ export default function EDAReport() {
         
         <div className="glass-panel" style={{ padding: '15px', textAlign: 'center' }}>
           <h4 style={{ margin: '0 0 10px 0' }}>SHAP Summary Plot</h4>
-          <img src="http://127.0.0.1:8000/static/summary_plot_Beeswarm1.png" alt="SHAP Beeswarm" style={{ width: '100%', borderRadius: '8px', filter: 'invert(0.9) hue-rotate(180deg) brightness(1.1) contrast(1.2)' }} />
+          <img src="https://student-dropout-prediction-with-xai.onrender.com/static/summary_plot_Beeswarm1.png" alt="SHAP Beeswarm" style={{ width: '100%', borderRadius: '8px', filter: 'invert(0.9) hue-rotate(180deg) brightness(1.1) contrast(1.2)' }} />
         </div>
 
         <div className="glass-panel" style={{ padding: '15px', textAlign: 'center' }}>
           <h4 style={{ margin: '0 0 10px 0' }}>Joint Effect (Age & Course)</h4>
-          <img src="http://127.0.0.1:8000/static/Joint%20Effect%20of%20Age%26Course%20on%20Dropout%20Risk1.png" alt="Age and Course" style={{ width: '100%', borderRadius: '8px', filter: 'invert(0.9) hue-rotate(180deg) brightness(1.1) contrast(1.2)' }} />
+          <img src="https://student-dropout-prediction-with-xai.onrender.com/static/Joint%20Effect%20of%20Age%26Course%20on%20Dropout%20Risk1.png" alt="Age and Course" style={{ width: '100%', borderRadius: '8px', filter: 'invert(0.9) hue-rotate(180deg) brightness(1.1) contrast(1.2)' }} />
         </div>
 
         <div className="glass-panel" style={{ padding: '15px', textAlign: 'center' }}>
           <h4 style={{ margin: '0 0 10px 0' }}>XGBoost Confusion Matrix</h4>
-          <img src="http://127.0.0.1:8000/static/confusion-matrix-XGB.png" alt="Confusion Matrix" style={{ width: '100%', borderRadius: '8px', filter: 'invert(0.9) hue-rotate(180deg) brightness(1.1) contrast(1.2)' }} />
+          <img src="https://student-dropout-prediction-with-xai.onrender.com/static/confusion-matrix-XGB.png" alt="Confusion Matrix" style={{ width: '100%', borderRadius: '8px', filter: 'invert(0.9) hue-rotate(180deg) brightness(1.1) contrast(1.2)' }} />
         </div>
 
       </div>

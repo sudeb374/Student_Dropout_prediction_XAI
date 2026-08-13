@@ -70,12 +70,12 @@ export default function PredictionPortal() {
       return;
     }
     try {
-      const pRes = await fetch('http://127.0.0.1:8000/predict', {
+      const pRes = await fetch('https://student-dropout-prediction-with-xai.onrender.com/predict', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(formData)
       });
-      const eRes = await fetch('http://127.0.0.1:8000/explain', {
+      const eRes = await fetch('https://student-dropout-prediction-with-xai.onrender.com/explain', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(formData)

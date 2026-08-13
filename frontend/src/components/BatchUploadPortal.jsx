@@ -26,7 +26,7 @@ export default function BatchUploadPortal() {
     formData.append('file', file);
     
     try {
-      const res = await fetch('http://127.0.0.1:8000/predict_batch', {
+      const res = await fetch('https://student-dropout-prediction-with-xai.onrender.com/predict_batch', {
         method: 'POST',
         body: formData
       });

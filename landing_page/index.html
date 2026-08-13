@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University Analytics Portal | AI Retention Engine</title>
+    <meta name="description"
+        content="An enterprise-grade, AI-powered analytics portal to predict and prevent student dropouts.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <div class="logo-icon"></div>
+                <span>UniRetain AI</span>
+            </div>
+            <div class="nav-links">
+                <a href="#how-it-works">How It Works</a>
+                <a href="#features">Features</a>
+                <a href="http://localhost:5173" class="btn btn-primary nav-btn">Launch App</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="glow-orb orb-1"></div>
+        <div class="glow-orb orb-2"></div>
+
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="badge-pill">🚀 Enterprise Production Ready</div>
+                <h1 class="animate-fade-up item-1">Stop dropouts before <br />they happen.</h1>
+                <p class="animate-fade-up item-2">Deploy our AI engine to identify at-risk students with pin-point
+                    accuracy. Understand exactly <em>why</em> they are struggling and prescribe automated interventions.
+                </p>
+                <div class="cta-group animate-fade-up item-3">
+                    <a href="http://localhost:5173" class="btn btn-primary btn-glow">Live Demonstration</a>
+                    <a href="#how-it-works" class="btn btn-secondary">See How It Works</a>
+                </div>
+            </div>
+
+            <div class="hero-visual animate-fade-up item-4">
+                <div class="glass-mockup">
+                    <img src="assets/Screenshot 2026-07-24 at 14.41.39.png" alt="Main Dashboard Dashboard">
+                    <div class="floating-badge badge-1">
+                        <span class="dot green"></span> Accuracy: 92%
+                    </div>
+                    <div class="floating-badge badge-2">
+                        <span class="dot red"></span> High Risk Detected
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- How It Works -->
+    <section id="how-it-works" class="section-container">
+        <div class="section-header reveal-up">
+            <h2>How The AI Engine Works</h2>
+            <p>A seamless pipeline from raw student data to actionable retention strategies.</p>
+        </div>
+
+        <div class="steps-grid">
+            <div class="step-card reveal-up">
+                <div class="step-number">01</div>
+                <h3>Secure Authentication</h3>
+                <p>Role-based access ensures counselors, students, and admins only see what they are authorized to see.
+                </p>
+            </div>
+            <div class="step-card reveal-up" style="transition-delay: 0.2s;">
+                <div class="step-number">02</div>
+                <h3>Process & Predict</h3>
+                <p>Upload a CSV of hundreds of students. Our ensemble model (XGBoost, CatBoost, RF) predicts dropout
+                    risk instantly.</p>
+            </div>
+            <div class="step-card reveal-up" style="transition-delay: 0.4s;">
+                <div class="step-number">03</div>
+                <h3>Explain & Intervene</h3>
+                <p>SHAP values break down the exact features driving the prediction, allowing counselors to prescribe
+                    targeted help.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="section-container">
+        <div class="feature-block">
+            <div class="feature-text reveal-left">
+                <span class="badge">Explainable AI</span>
+                <h2>Interactive Impact Analysis</h2>
+                <p>Understand the 'why' behind every prediction. Our SHAP-powered impact analysis breaks down exactly
+                    which factors (like tuition fees, approved units, or age) are driving a student towards graduation
+                    or dropping out.</p>
+                <ul class="feature-list">
+                    <li>
+                        <div class="check-icon">✓</div> Real-time probability distribution
+                    </li>
+                    <li>
+                        <div class="check-icon">✓</div> Visual feature impact (Green vs Red)
+                    </li>
+                    <li>
+                        <div class="check-icon">✓</div> Automated prescribed interventions
+                    </li>
+                </ul>
+            </div>
+            <div class="feature-image reveal-right">
+                <div class="glass-container hover-tilt">
+                    <img src="assets/Screenshot 2026-07-24 at 14.42.25.png" alt="Interactive Impact Analysis">
+                </div>
+            </div>
+        </div>
+
+        <div class="feature-block reverse">
+            <div class="feature-text reveal-right">
+                <span class="badge">Analytics</span>
+                <h2>EDA Report Analytics</h2>
+                <p>Zoom out and look at the big picture. Explore comprehensive feature analysis, SHAP dependencies, and
+                    model confusion matrices to understand the macro drivers of student retention.</p>
+            </div>
+            <div class="feature-image reveal-left">
+                <div class="glass-container hover-tilt">
+                    <img src="assets/1111.png" alt="EDA Report Analytics">
+                </div>
+            </div>
+        </div>
+
+        <div class="feature-block">
+            <div class="feature-text reveal-left">
+                <span class="badge">Documentation</span>
+                <h2>Integrated Data Dictionary</h2>
+                <p>Never guess what a data point means. Our integrated data dictionary and encoding guide provides
+                    instant clarity on all input parameters.</p>
+            </div>
+            <div class="feature-image reveal-right">
+                <div class="glass-container hover-tilt">
+                    <img src="assets/2222.png" alt="Interactive Data Dictionary">
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <h2>Ready to transform your retention rates?</h2>
+            <p>Join top universities utilizing AI to ensure every student succeeds.</p>
+            <a href="http://localhost:5173" class="btn btn-primary btn-glow">Enter The Portal</a>
+        </div>
+        <div class="copyright">
+            &copy; Developed by Sudeb🇮🇳 | University Analytics Portal.
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

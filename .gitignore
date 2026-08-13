@@ -49,8 +49,7 @@ Thumbs.db
 
 # Exclude unnecessary files and prototypes
 catboost_info/
-*.csv
 test_fetch.py
 test_predict.py
 dashboard.py
-!frontend/public/*.csv  
+!frontend/public/*.csv

@@ -46,3 +46,14 @@ yarn-debug.log
 .Trashes
 ehthumbs.db
 Thumbs.db
+
+# Exclude unnecessary files and prototypes
+catboost_info/
+*.png
+*.csv
+test_fetch.py
+test_predict.py
+dashboard.py
+!frontend/public/*.csv  
+!landing_page/assets/*.png
+!frontend/src/assets/*.png
